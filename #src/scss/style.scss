@@ -1,0 +1,10 @@
+@import 'libs/module';
+@import 'core/module';
+@import 'components/module';
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920;
+    padding: 0 1rem;
+}
