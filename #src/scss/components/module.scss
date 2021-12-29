@@ -2,11 +2,13 @@
 @import 'footer';
 
 // ATOM
-@import 'atom/a-btn';
 @import 'atom/hamburger';
-@import 'atom/modal';
-@import 'atom/overlay';
+@import 'atom/dropdown';
+@import 'atom/dropdown-student';
+@import 'atom/form';
+@import 'atom/box';
 
 // COMPONENT
-@import 'component/hero';
+@import 'component/filter-section';
+@import 'component/content-section';
 

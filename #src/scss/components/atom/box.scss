@@ -1,0 +1,95 @@
+.box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: $white;
+    border-radius: 4px;
+    padding: 40px;
+    transition: box-shadow .3s;
+    // box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    
+
+    :hover .box {
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    &__header {
+        color: $black;
+        @extend %sans-regular;
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    &__img {
+        height: 100px;
+        width: 100px;
+        border: 1px solid $silver;
+        box-sizing: border-box;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            max-width: 50px;
+            max-height: 50px;
+        }
+        
+        span {
+            display: none;
+            color: $scorpion;
+            @extend %sans-light;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+        }
+    }
+
+    &__text {
+        padding: 0 20px;
+        width: 78%;
+        h1 {
+            padding-bottom: 5px;
+            color: $black;
+            @extend %sans-bold;
+            font-size: 18px;
+            line-height: 21px;
+        }
+
+        h2 {
+            padding-bottom: 5px;
+            color: $black;
+            @extend %sans-light;
+            font-size: 16px;
+            line-height: 19px;
+        }
+        
+        h3 {
+            padding-top: 6px;
+            color: $black;
+            @extend %sans-regular;
+            font-size: 16px;
+            line-height: 19px;
+            span {
+                color: $scorpion;
+                @extend %sans-light;
+            }
+        }
+    }
+
+    &__btn-save {
+        border: none;
+        padding: 12px;
+        border-radius: 4px;
+        background-color: $concrete;
+
+        span {
+            color: $scorpion;
+            @extend %sans-light;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+
+}

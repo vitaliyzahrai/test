@@ -1,0 +1,59 @@
+.header {
+    height: 100px;
+    width: 100%;
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        padding: 21px 0 26px 0;
+    }
+
+    &__menu-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        :hover .dropdown__content {
+            display: block;
+        }
+    }
+
+    &__menu-item {
+        padding: 0 20px;
+        :hover{
+            color: $amaranth;
+            border-top: 3px solid $amaranth;
+        }
+    }
+
+    &__menu-search {
+        padding-left: 20px;
+
+        .fa, .fas {
+            font-size: 12px;
+            color: $tuna;
+        }
+    }
+
+    &__menu-link {
+        display: flex;
+        align-items: center;
+        padding: 38px 0;
+        text-decoration: none;
+        color: $tuna;
+        @extend %sans-regular;
+        font-size: 15px;
+        line-height: 18px;
+        text-transform: uppercase;
+
+        .fa, .fas {
+            font-size: 14px;
+            padding-left: 10px;
+        }
+    }
+
+}

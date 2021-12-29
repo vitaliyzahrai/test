@@ -1,0 +1,51 @@
+.dropdown-student {         
+    padding: 25px 30px;
+    background-color: $white;
+    border-radius: 4px;
+    height: 70px;
+    max-width: 200px;
+    width: 100%;
+
+    &__btn {
+        text-decoration: none;
+        color: $tuna;
+        @extend %sans-regular;
+        font-size: 16px;
+        line-height: 19px;
+        .fa, .fas {
+            font-size: 14px;
+            padding-left: 10px;
+        }
+        
+    }
+    
+    &__content {
+        display: none;
+        position: absolute;
+        background-color: $white;
+        max-width: 300px;
+        width: 100%;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        z-index: 1;
+        top: 80px;
+    }
+
+    &__link {
+        padding: 10px 10px;
+        margin: 20px;
+        color:$black;
+        @extend %sans-regular;
+        font-size: 16px;
+        line-height: 19px;
+        text-decoration: none;
+        display: block;
+
+        &:hover {
+            background-color: $yellow-orange;
+            color: $white;
+            border-radius: 4px;
+        }
+    }
+
+}

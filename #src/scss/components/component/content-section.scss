@@ -1,0 +1,18 @@
+.content {
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 150px;
+
+    &__header {
+        
+        p {
+            padding: 50px 0 25px 40px;
+            color: $black;
+            @extend %sans-regular;
+            font-size: 16px;
+            line-height: 32px;
+        }
+    }
+}
