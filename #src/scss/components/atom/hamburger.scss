@@ -1,0 +1,39 @@
+@include mq("desktop") {
+
+    .humburger {
+        position: fixed;
+        z-index: 300;
+        right: 0.5rem;
+        top: 1.4rem;
+        cursor: pointer;
+        border: 2px solid $amaranth;
+        padding: 8px;
+        border-radius: 50%;
+        @include easeOut;
+    
+        &__line {
+            width: 26px;
+            height: 2px;
+            margin: 5px 0;
+            background: $amaranth;
+            @include easeOut;
+        }
+    
+        &.close {
+            transform: rotate(180deg);
+    
+            .humburger__line {
+                &:nth-child(1) {
+                    transform: rotate(45deg) translate(5px,6px);
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+                &:nth-child(3) {
+                    transform: rotate(-45deg) translate(5px, -5px);
+                }
+            }
+        }
+    }
+
+}

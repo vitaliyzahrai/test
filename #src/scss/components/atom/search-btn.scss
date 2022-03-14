@@ -1,0 +1,34 @@
+.search-btn {
+
+    &__search {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__input-search {
+        padding: 24px 30px;
+        color: $black;
+        @extend %sans-light;
+        font-size: 18px;
+        line-height: 19px;
+        width: 80%; 
+        border: 1px solid $silver;
+        border-right: none;
+    }
+
+    &__btn {
+        width: 20%;
+        padding: 10px;
+        background: $yellow-orange;
+        color: $white;
+        font-size: 18px;
+        border: 1px solid $silver;
+        border-left: none;
+        cursor: pointer;
+        transition: 0.3s;
+        
+    }
+    :hover.search-btn__btn {
+        background: $amaranth;
+    }
+}
