@@ -2,11 +2,14 @@
 @import 'footer';
 
 // ATOM
+@import 'atom/modal';
+@import 'atom/overlay';
 @import 'atom/hamburger';
 @import 'atom/dropdown';
-@import 'atom/dropdown-student';
-@import 'atom/form';
+@import 'atom/sub-menu';
+@import 'atom/form-search';
 @import 'atom/box';
+@import 'atom/search-btn';
 
 // COMPONENT
 @import 'component/filter-section';

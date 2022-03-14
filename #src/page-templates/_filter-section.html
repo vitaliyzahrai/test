@@ -4,38 +4,53 @@
 
         <div class="filter__body">
 
-            <div class="dropdown-student">
-                <a href="#" class="dropdown-student__btn">Type of Student
+            <button class="dropdown">
+                <a href="#" class="dropdown__btn">Type of Student
                     <i class="fas fa-caret-down"></i>
                 </a>
-                <!-- .dropdown-student__btn-->
-                <div class="dropdown-student__content">
-                    <a href="#" class="dropdown-student__link">Link1</a>
-                    <a href="#" class="dropdown-student__link">Link2</a>
-                    <a href="#" class="dropdown-student__link">Link3</a>
-                    <a href="#" class="dropdown-student__link">Link4</a>
-                </div>
-                <!-- .dropdown-student__content-->
+                <!-- /.dropdown__btn-->
                 
-            </div>
-            <!-- .dropdown-student-->
+                <div class="dropdown__content">
+                    <form>
+                        <div class="dropdown__item">
+                            <input type="checkbox" id="african-american" class="custom-checkbox" name="interest" value="african-american">
+                            <label for="african-american">African/American</label>
+                        </div>
+                        <!-- /.dropdown__item-->
+                        <div class="dropdown__item">
+                            <input type="checkbox" id="latinx-hispanic" class="custom-checkbox" name="interest" value="latinx-hispanic">
+                            <label for="latinx-hispanic">Latinx/Hispanic</label>
+                        </div>
+                        <!-- /.dropdown__item-->
+                        <div class="dropdown__item">
+                            <input type="checkbox" id="native-american" class="custom-checkbox" name="interest" value="native-american">
+                            <label for="native-american">Native/American</label>
+                        </div>
+                        <!-- /.dropdown__item-->
+                    </form>
+                    <!-- /form-->
+                </div>
+                <!-- /.dropdown__content-->
+            </button>
+            <!-- /.dropdown-->
 
             <div class="form">
                 <form class="form__search">
                     <input class="form__input-search" type="search" placeholder="Sity" aria-label="Search">
                     <button class="form__btn" type="submit">Search</button>
                 </form>
-            </div>
+            </div>  
+            <!-- /.form-->
 
             <button class="filter__btn">
                 <img src="img/filter/filter.png" alt="">
                 <span>Filter By</span>    
                 <i class="fas fa-caret-down"></i>
             </button>
-
+            <!-- /.filter__btn-->
 
         </div>
-
+        <!-- /.filter__body-->
     </div>
-
+    <!-- /.flex-container-->
 </section>

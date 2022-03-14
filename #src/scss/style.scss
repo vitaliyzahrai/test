@@ -5,12 +5,32 @@
 .flex-container {
     margin: 0 auto;
     width: 80%;
-    max-width: 1920px;
+    max-width: 1700px;
     padding: 0 1rem;
+    
+    @include mq("desktop"){
+        width: 100%;
+    }
 }
 .container {
     margin: 0 auto;
     width: 60%;
-    max-width: 1920px;
-    padding: 0 1rem;
+    max-width: 1700px;
+    padding: 0 1rem 5rem 1rem;
+
+    @include mq("desktop"){
+        width: 80%;
+    }
+    @include mq("tablet"){
+        width: 100%;
+    }
+}
+
+.main {
+    position: relative; 
+    top: 100px;
+}
+
+.lock{
+    overflow: hidden;
 }

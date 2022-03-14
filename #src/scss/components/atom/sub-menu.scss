@@ -1,0 +1,39 @@
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: $white;
+    max-width: 280px;
+    width: 100%;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 1;
+
+    &__link {
+        padding: 10px 10px;
+        margin: 20px;
+        color: $black;
+        @extend %sans-regular;
+        font-size: 16px;
+        line-height: 19px;
+        text-decoration: none;
+        display: block;
+
+        &:hover {
+            background-color: $yellow-orange;
+            color: $white;
+            border-radius: 4px;
+        }
+    }
+
+    @include mq("desktop") {
+        position: inherit;
+        border-top-width: 10px;
+        margin: 0 auto;
+        box-shadow: none;
+        
+        &__list {
+            padding: 5px 0;
+            margin-bottom: 10px;
+        }
+    }
+}

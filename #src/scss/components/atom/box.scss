@@ -1,21 +1,27 @@
 .box {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background: $white;
-    border-radius: 4px;
-    padding: 40px;
-    transition: box-shadow .3s;
-    // box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-    
-
-    :hover .box {
+    :hover.box__content {
+        cursor: pointer;
+        transform: scale(1.1);
+        transition-duration: 0.2s;
         box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+        transition: box-shadow .3s;
+    }
+    :hover h1 {
+        color: $amaranth;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: $white;
+        border-radius: 4px;
+        width: 100%;
+        padding: 40px;
     }
 
     &__header {
         color: $black;
-        @extend %sans-regular;
         font-size: 16px;
         line-height: 32px;
     }
@@ -68,7 +74,7 @@
         h3 {
             padding-top: 6px;
             color: $black;
-            @extend %sans-regular;
+            @extend %sans-bold;
             font-size: 16px;
             line-height: 19px;
             span {
@@ -78,17 +84,68 @@
         }
     }
 
+    &__save {
+        width: 100px;
+        :hover.box__btn-save {
+            transform: scale(1.1);
+            transition-duration: 0.2s;
+        }
+        :hover.box__btn-save img {
+            transform: scale(1.2);
+            transition-duration: 0.2s; 
+            opacity: 0.8;
+        }
+    }
+
     &__btn-save {
         border: none;
         padding: 12px;
         border-radius: 4px;
         background-color: $concrete;
+        cursor: pointer;
 
         span {
             color: $scorpion;
             @extend %sans-light;
             font-size: 14px;
             line-height: 16px;
+        }
+    }
+
+
+    @include mq("tablet"){
+        
+        &__content{
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        &__img {
+            order: 0;
+            margin-right: 10px;
+        }
+
+        &__text {
+            order: 2;
+            padding-top: 20px;
+            width: 90%;
+        }
+
+        &__save{
+            margin-left: 10px;
+        }
+    }
+
+    @include mq("phablet"){
+        :hover.box__content {
+            transform: scale(1.02);
+        }
+        &__text {
+            width: 100%;
+            padding-left: 5px;
+            padding-right: 5px;
         }
     }
 

@@ -1,18 +1,41 @@
 .content {
-    max-width: 900px;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    padding-bottom: 150px;
 
     &__header {
-        
+        padding: 50px 0 25px 40px;
         p {
-            padding: 50px 0 25px 40px;
             color: $black;
             @extend %sans-regular;
             font-size: 16px;
             line-height: 32px;
         }
+    }
+
+    &__create {
+        padding: 80px 0 50px 50px;
+    }
+
+    &__link {
+        @extend %sans-regular;
+        font-size: 18px;
+        line-height: 21px;
+        text-decoration-line: underline;
+        color: $amaranth;
+
+        .fa, .fas {
+            padding-left: 15px;
+        }
+    }
+
+
+    @include mq("phablet"){
+
+        &__header {
+            padding: 50px 0 25px 10px;
+        }
+
+        &__create {
+            padding: 80px 0 50px 10px;
+        }
+
     }
 }
