@@ -52,8 +52,9 @@
 
     @include mq("phablet"){
         &__btn {
-            margin: 0;
+            margin: 3px;
+            max-width: 46%;
         }
     }
-    
+
 }

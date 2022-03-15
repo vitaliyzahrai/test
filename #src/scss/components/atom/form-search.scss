@@ -10,6 +10,7 @@
 
     &__input-search {
         padding: 24px 30px;
+        background-color: $white;
         color: $black;
         @extend %sans-light;
         font-size: 16px;
@@ -63,6 +64,17 @@
 
         &__btn {
             max-width: 30%;
+        }
+    }
+
+    @include mq("phone") {
+
+        &__input-search {
+            max-width: 60%;
+        }
+
+        &__btn {
+            max-width: 40%;
         }
     }
 }
