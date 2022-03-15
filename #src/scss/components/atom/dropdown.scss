@@ -108,3 +108,9 @@
         margin: 0;
     }
 }
+
+@include mq("phablet"){
+    .dropdown{
+        max-width: 46%;
+    }
+}
